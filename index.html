@@ -1,0 +1,148 @@
+
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Umma Dimsum</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- NAVBAR -->
+    <header>
+        <div class="logo">Umma Dimsum</div>
+
+        <nav>
+            <a href="#home">Beranda</a>
+            <a href="#menu">Menu</a>
+            <a href="#about">Tentang Kami</a>
+        </nav>
+    </header>
+
+    <!-- HERO -->
+    <section class="hero" id="home">
+        <h1>Welcome to Umma Dimsum!</h1>
+
+        <p>
+            Nikmati makanan lezat dan praktis bersama Umma Dimsum.
+            <br>
+            Pilihan camilan yang cocok untuk menemani waktu santaimu.
+        </p>
+
+        <a href="#menu" class="hero-btn">Lihat Menu</a>
+    </section>
+
+    <!-- MENU -->
+    <section class="menu" id="menu">
+
+        <h2>Menu Kami</h2>
+
+        <p class="menu-desc">
+            Pilihan menu lezat dari Umma Dimsum.
+        </p>
+
+        <div class="product-container">
+
+            <!-- DIMSUM ORIGINAL -->
+            <div class="product">
+
+                <img
+                    src="dimsum.jpeg"
+                    alt="Dimsum Original">
+
+                <h3>Dimsum Original</h3>
+
+                <p>
+                    Dimsum lezat dan siap makan.
+                    Satu porsi berisi 4 pcs.
+                </p>
+
+                <div class="price">Rp21.000</div>
+
+                <div class="quantity">
+                    <button onclick="ubahJumlah('dimsum', -1)">-</button>
+
+                    <span id="jumlahDimsum">0</span>
+
+                    <button onclick="ubahJumlah('dimsum', 1)">+</button>
+                </div>
+
+            </div>
+
+            <!-- TAHU BAKSO -->
+            <div class="product">
+
+                <img
+                    src="tahubakso.jpeg"
+                    alt="Tahu Bakso">
+
+                <h3>Tahu Bakso</h3>
+
+                <p>
+                    Tahu dengan isian bakso yang lezat.
+                    Satu porsi berisi 4 pcs.
+                </p>
+
+                <div class="price">Rp21.000</div>
+
+                <div class="quantity">
+                    <button onclick="ubahJumlah('tahu', -1)">-</button>
+
+                    <span id="jumlahTahu">0</span>
+
+                    <button onclick="ubahJumlah('tahu', 1)">+</button>
+                </div>
+
+            </div>
+
+        </div>
+    </section>
+
+    <!-- TOTAL PESANAN -->
+    <section class="total-section">
+
+        <h2>Pesanan Kamu</h2>
+
+        <p>Dimsum Original: <span id="totalDimsum">0</span> porsi</p>
+
+        <p>Tahu Bakso: <span id="totalTahu">0</span> porsi</p>
+
+        <p>
+            <strong>
+                Total Harga:
+                <span id="totalHarga">Rp0</span>
+            </strong>
+        </p>
+
+        <button class="order-btn" onclick="pesanGoFood()">
+            Pesan via GoFood
+        </button>
+
+    </section>
+
+    <!-- TENTANG KAMI -->
+    <section class="about" id="about">
+
+        <h2>Tentang Umma Dimsum</h2>
+
+        <p>
+            Umma Dimsum menyediakan pilihan makanan praktis
+            dan lezat untuk menemani waktu santaimu.
+            Kami menghadirkan Dimsum Original dan Tahu Bakso
+            yang siap dinikmati bersama keluarga maupun teman.
+        </p>
+
+    </section>
+
+    <!-- FOOTER -->
+    <footer>
+        <p>&copy; 2026 Umma Dimsum. All Rights Reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
